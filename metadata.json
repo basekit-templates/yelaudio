@@ -1,0 +1,9 @@
+{
+	"name":"Yelaudio",
+	"directory":"yelaudio",
+	"thumbnail":"/yelaudio/yelaudio.jpg",
+	"screenshot":"/yelaudio/yelaudio.jpg",
+	"pageTypes":[],
+	"defaultColorSwatch":"Warmth 5",
+	"defaultFontSwatch":"Lato"
+}
