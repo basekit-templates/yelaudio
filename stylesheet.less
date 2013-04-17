@@ -505,6 +505,120 @@ hr.line.align-right {
 }
 
 
+/* Gallery CSS */
+/* 
+    Document   : gallery
+    Author     : Dom
+*/
+
+.widget.gallery
+{
+    background-color: @color-swatch1;
+}
+.widget.gallery p
+{
+    padding: 10px;
+    color: #333333;
+}
+.widget.gallery ul.gallery-widget
+{
+    display:block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    min-height: 100px;
+    color: #555555;
+   
+}
+.widget.gallery ul.gallery-widget li
+{
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    background-position:-9999px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    width: 49%; 
+    font-family: @font-swatch4-font-family;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+.widget.gallery ul.gallery-widget li img {
+    width: 100%;
+    margin-bottom: 4px;
+}
+.widget.gallery ul.gallery-widget li span.title, ul.gallery-widget li span.description
+{
+    width: 100%;
+    text-align: center;
+}
+.widget.gallery ul.gallery-widget li span.title.visible, ul.gallery-widget li span.description.visible
+{
+    display:block;
+}
+.widget.gallery ul.gallery-widget li span.title {
+    font-weight: bold;
+    display: block;
+}
+.widget.gallery ul.gallery-widget li span.description {
+    color: lighten(@color-swatch5,2%);
+}
+
+/* GALLERY - SHRINK TO FIT */
+
+.widget.gallery.shrink ul li{
+    height: 155px;
+    width: 155px;
+    line-height: 155px;
+    vertical-align: middle;
+}
+.widget.gallery.shrink ul li img{
+    height: auto !important;
+    width: auto !important;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* GALLERY - FIXED ASPECT */
+
+.widget.gallery.fixed ul li{
+    height: 155px;
+    width: 155px;
+    line-height: 155px;
+}
+.widget.gallery.fixed ul li img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* GALLERY - SCATTER */
+
+.widget.gallery.scatter ul li{
+    height: auto;
+    width: auto;
+}
+.widget.gallery.scatter ul li img{
+    height: auto !important;
+    width: auto !important;
+}
+
+
+/* GALLERY - CENTERED */
+
+.widget.gallery.centered ul li{
+    height: 155px;
+    width: 155px;
+    background-position: center center;
+}
+.widget.gallery.centered ul li img{
+    display: none;
+}
+
+
 /* Twitter CSS */
 /* 
     Document   : twitter
