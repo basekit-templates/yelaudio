@@ -843,5 +843,92 @@ hr.line.align-right {
     background-image: image('/yelaudio/images/socialicons-youtube.png');
 }
 
+.slideshow-widget .btn-prev, .slideshow-widget .btn-next
+{
+  display: none;
+  position: absolute;
+  width: 14%;
+  height: 14%; 
+  font-size: 0;
+  z-index: 11;
+  text-indent: -99999px;  
+}
+
+.slideshow-widget .btn-prev
+{
+  left: 10px;
+  background: image('/yelaudio/images/slideshow-arrow-left.png') no-repeat center left;
+  background-size: contain;
+}
+
+.slideshow-widget .btn-next
+{
+  right: 10px;
+  background: image('/yelaudio/images/slideshow-arrow-right.png') no-repeat center right; 
+    background-size: contain;   
+}
+
+.slideshow-widget:hover .btn-prev, .slideshow-widget:hover .btn-next
+{
+  top: 43%;
+  display: block;
+  cursor: pointer;
+}
+
+.slideshow-widget-controls
+{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.slideshow-empty {
+    padding: 10px;
+}
+
+.slideshow-widget .btn-play
+{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  background: image('/yelaudio/images/slideshow-play.png') center no-repeat;
+  background-size: 100%;
+  width: 14%;
+  height: 14%;
+  top: 43%;
+  left: 43%;
+}
+
+.slideshow-widget:hover .btn-play
+{
+  display:block;
+}
+
+.slideshow-widget:hover .btn-play.pause
+{
+  background: image('/yelaudio/images/slideshow-pause.png') center no-repeat;
+  background-size: 100%;  
+}
+
+.slideshow-widget-controls .dot
+{
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  background: image('/yelaudio/images/slideshow-dot-not-selected.png') center no-repeat;
+}
+
+.slideshow-widget-controls .dot.selected
+{
+  background: image('/yelaudio/images/slideshow-dot-selected.png') center no-repeat;
+}
+
+.slideshow-widget .btn-prev.disabled, .slideshow-widget .btn-next.disabled, .slideshow-widget .btn-play.disabled
+{
+  opacity:0.4;
+  cursor: default;
+}
+
 
 
