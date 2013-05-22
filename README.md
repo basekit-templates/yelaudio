@@ -3,6 +3,9 @@ yelaudio
 
 BaseKit's Yelaudio Template
 
+Changes - 2013-05-22
++ Onto Develop Branch
+
 Changes 2013-05-21 - Fulvia
 + Fixed issues for QA
 + General navigation fixes
