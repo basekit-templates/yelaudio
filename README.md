@@ -1,9 +1,9 @@
-yelaudio
-========
-
 BaseKit's Yelaudio Template
 
-Changes - 2013-05-22
+Changes 2013-06-18 - Giulietta
++ Updated image directories to match code-base
+
+Changes 2013-05-22
 + Onto Develop Branch
 
 Changes 2013-05-21 - Fulvia
@@ -17,6 +17,3 @@ Changes 2013-03-14 - Carrera
 + Replaced navigation widget with extendednavigation widget
 + Added CSS for extendednavigation, redirect, tweet, social bar widgets
 + Added new layout.twig so all templates can use it
-
-Changes 2013-06-18 - Giulietta
-+ Updated image directories to match code-base

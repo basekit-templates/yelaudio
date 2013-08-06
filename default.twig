@@ -1,15 +1,42 @@
 {% extends "layout.twig" %}
 
 {% block content %}
+<div class="bk-pt-default">
+
 <header>
-{{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/logo.png')})|raw}}
-{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+    <div class="wrapper clearfix header-content">
+       <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "YelAudio"})|raw}}
+        </div>
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    </div>
 </header>
 
-{{zone('main')|raw}}
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div>
 
 <footer>
-{{widget('companyaddress', 'companyaddressfooter', {})|raw}}
-</footer>
-{% endblock %}
+    <div class="wrapper clearfix footer-content">
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
 
+                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
+                
+            </div>
+            <div class="column columns-two-right">
+                <ul>
+                    <li>{{widget('profile', 'footercolumn2profilephone', { 'profileType':'phone', 'phone':'profile'})|raw}}</li>
+                    <li class="footer-separator">|</li>
+                    <li>{{widget('profile', 'footercolumn2profileemail', { 'profileType':'email', 'email':'profile'})|raw}}</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+{% endblock %}

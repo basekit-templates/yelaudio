@@ -1,8 +1,133 @@
 {
-	"name":"Yelaudio",
-	"thumbnail":"yelaudio.jpg",
-	"screenshot":"yelaudio.jpg",
-	"pageTypes":[],
-	"defaultColorSwatch":"Warmth 5",
-	"defaultFontSwatch":"Lato"
+	"name":"yelaudio",
+	"thumbnail":"yelaudio.png",
+	"screenshot":"yelaudio.png",
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#4a7491",
+            "color3":"#c26b57",
+            "color4":"#111111",
+            "color5":"#787878",
+            "color6":"#ffffff",
+            "color7":"#235071"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#0B89D4",
+            "color3":"#C76214",
+            "color4":"#111111",
+            "color5":"#787878",
+            "color6":"#ffffff",
+            "color7":"#0B89D4"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#54BAAA",
+            "color3":"#54BAAA",
+            "color4":"#111111",
+            "color5":"#787878",
+            "color6":"#ffffff",
+            "color7":"#54BAAA"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#E6771D",
+            "color3":"#E6771D",
+            "color4":"#111111",
+            "color5":"#787878",
+            "color6":"#ffffff",
+            "color7":"#E6771D"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#3CA6C3",
+            "color3":"#3CA6C3",
+            "color4":"#111111",
+            "color5":"#787878",
+            "color6":"#ffffff",
+            "color7":"#3CA6C3"
+        }
+    },
+    "fontSwatch": {
+       "title": "Lato",
+        "font1": {
+            "font-family": "Lato",
+            "font-size": "30px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Lato",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Lato",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "32px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Lato",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "color-hover": "@color-swatch2",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+        },
+        "font7": {
+            "font-family": "Lato",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch7"
+        },
+        "font8": {
+            "font-family": "Lato",
+            "font-size": "36px",
+            "font-weight": "400",
+            "line-height": "50px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Lato",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
 }
