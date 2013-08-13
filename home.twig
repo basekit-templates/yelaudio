@@ -6,7 +6,7 @@
     <div class="wrapper clearfix header-content">
        <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "YelAudio"})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
     </div>
@@ -26,7 +26,7 @@
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left">
 
-                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
+                 {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
                 
             </div>
             <div class="column columns-two-right">
