@@ -128,6 +128,14 @@
             "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
+        },
+         "font10": {
+            "font-family": "Lato",
+            "font-size": "30px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
         }
     }
 }
