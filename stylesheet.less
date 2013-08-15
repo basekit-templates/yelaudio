@@ -135,7 +135,7 @@ ul, ol, li {
 
 header {
   position: absolute;
-  z-index: 1;
+  z-index: 999;
   right: 0;
   left: 0;
   top: 0;
@@ -276,10 +276,6 @@ footer ul li {
   padding: 0px 8px;
 }
 
-.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left, .responsivecolumns .columns-two-right, .columns-two-50-50 .columns-two-right {
-  width: 47%;
-  margin: 0 1.5%;
-}
 
 
 /* ===============================
@@ -514,17 +510,18 @@ footer ul li {
  .widget.feature {
 }
 
-.widget.feature .feature-bgimg {
-  height: 500px; /* should be in media query*/
-  z-index: 3;
- }
-
 .widget.feature .content {
   height: 550px;
   text-align: left;
   vertical-align: bottom;
-  z-index: 2;
+  z-index: 400;
 }
+
+.widget.feature .feature-bgimg {
+  height: 500px; /* should be in media query*/
+  z-index: 300;
+ }
+
 
 /* FEATURE TITLE */
 
@@ -1191,6 +1188,7 @@ hr.line.align-right {
     margin-top: 6px;
     margin-bottom: 20px;
     resize: none;
+    padding: 0;
 }
 
 .widget.contactform fieldset button.btn {
@@ -1376,7 +1374,7 @@ footer .widget.socialicons {
 }
 
 .widget.socialicons a:hover {
- background-color: darken(@color-swatch5,5%);
+ background-color: darken(@color-swatch5,10%);
  }
 
 .widget.socialicons span a {
@@ -1385,39 +1383,45 @@ footer .widget.socialicons {
     background-repeat: no-repeat;
 }
 span.bk-socialicons-twitter a {
-    background-image: image('/images/socialicons-twitter.png');
+    background-image: image('/images/socialicons-twitter.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-linkedin a {
-    background-image: image('/images/socialicons-linkedin.png');
+    background-image: image('/images/socialicons-linkedin.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-facebook a {
-    background-image: image('/images/socialicons-facebook.png');
+    background-image: image('/images/socialicons-facebook.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-rss a {
-    background-image: image('/images/socialicons-rssfeed.png');
+    background-image: image('/images/socialicons-rss.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-googleplus a {
-    background-image: image('/images/socialicons-googleplus.png');
+    background-image: image('/images/socialicons-googleplus.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 22px;
 }
 
 span.bk-socialicons-youtube a {
-    background-image: image('/images/socialicons-youtube.png');
+    background-image: image('/images/socialicons-youtube.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 22px;
 }
 
 
@@ -1425,6 +1429,9 @@ span.bk-socialicons-youtube a {
    PROFILE WIDGETS
    =============================== */
 
+footer .widget.profile {
+  padding: 0 15px;
+}
 
 .responsivecolumns .columns-two-left .widget.profile, .columns-two-50-50 .columns-two-left .widget.profile {
   float: left;
@@ -1642,11 +1649,11 @@ footer .widget.profile .twitter span {
 }
 
 .widget.responsiveslideshow .slideshow-widget {
-    background-color: lighten(@color-swatch5,17%);
+    background-color: transparent;
 }
 .widget.responsiveslideshow span.inner img {
-    width:auto;
-    height:100%;
+    width:100%;
+    height:auto;
 }
 
 .widget.responsiveslideshow .image-wrapper {
@@ -1920,10 +1927,6 @@ footer .widget.profile .twitter span {
     font-size: .9em;
   }
 
-  .widget.responsiveslideshow .slideshow-image-list {
-    height:200px;
-  }
-
     .widget.gallery ul.gallery-widget li
   {
     width: 50%;
@@ -1990,15 +1993,7 @@ footer .widget.profile .twitter span {
 
   /* FOOTER */
 
-  .responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left, .responsivecolumns .columns-two-right, .columns-two-50-50 .columns-two-right {
-    width: 90%;
-    margin: 0 5% 7%;
-    float: left;
-  }
 
-  .responsivecolumns .columns-two-right .widget.profile, .columns-two-50-50 .columns-two-right .widget.profile {
-    float: left;
-  }
 
   footer {
   position: relative;
@@ -2060,6 +2055,7 @@ footer .widget.profile .twitter span {
     margin-left: 0;
     margin-bottom: 0px;
     border-bottom: 1px solid #cccccc;
+    text-align: center;
   }
 
   .widget .extendednavigation ul li.selected {
