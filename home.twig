@@ -2,18 +2,17 @@
 
 {% block content %}
 
-<header>
-    <div class="wrapper clearfix header-content">
-       <div class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        </div>
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    </div>
-</header>
-
 <section>
-    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"MALESUADA ANTE","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"MALESUADE ANTE","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+        <header>
+            <div class="wrapper clearfix header-content">
+                <div class="companyheader clearfix">
+                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                </div>
+                    {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            </div>
+        </header>
 </section>
 
 <div class="main wrapper clearfix">
