@@ -54,15 +54,15 @@
        "title": "Lato",
         "font1": {
             "font-family": "Lato",
-            "font-size": "30px",
+            "font-size": "32px",
             "font-weight": "500",
-            "line-height": "24px",
+            "line-height": "38px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
             "font-family": "Lato",
-            "font-size": "24px",
+            "font-size": "28px",
             "font-weight": "inherit",
             "line-height": "36px",
             "color": "@color-swatch4",
@@ -70,17 +70,17 @@
         },
         "font3": {
             "font-family": "Lato",
-            "font-size": "18px",
+            "font-size": "24px",
             "font-weight": "inherit",
-            "line-height": "28px",
+            "line-height": "32px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font4": {
             "font-family": "Lato",
-            "font-size": "16px",
+            "font-size": "20px",
             "font-weight": "inherit",
-            "line-height": "26px",
+            "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -96,7 +96,7 @@
             "font-family": "Lato",
             "font-size": "15px",
             "font-weight": "400",
-            "line-height": "40px",
+            "line-height": "20px",
             "color": "@color-swatch4",
             "color-hover": "@color-swatch3",
             "letter-spacing": "inherit",

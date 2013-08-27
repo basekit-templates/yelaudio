@@ -3,7 +3,6 @@
 {% block content %}
 
 <section>
-    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"MALESUADE ANTE","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
         <header>
             <div class="wrapper clearfix header-content">
                 <div class="companyheader clearfix">
@@ -13,6 +12,7 @@
                     {{widget('extendednavigation', 'navigationheader', {})|raw}}
             </div>
         </header>
+        {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"MALESUADE ANTE","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
 </section>
 
 <div class="main wrapper clearfix">
