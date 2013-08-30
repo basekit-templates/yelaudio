@@ -349,7 +349,7 @@ footer ul li {
 
 .widget.extendednavigation ul.align-left li, .widget.extendednavigation ul.align-left li:hover ul li
 {
-  text-align: center;
+  text-align: left;
 }
 
 .widget.extendednavigation ul.align-right li, .widget.extendednavigation ul.align-right li:hover ul li
@@ -832,7 +832,6 @@ footer ul li {
 {
     display:block;
     max-width: 100%;
-    margin: 0 auto;
     border: 0;
     border-width: 0;
 }
@@ -848,7 +847,6 @@ footer ul li {
     font-size: @font-swatch4-font-size;
     color: @font-swatch4-color;
     text-decoration: none;
-    text-align: center;
     text-transform: uppercase;
     line-height: @font-swatch4-line-height;
 }
@@ -864,7 +862,6 @@ footer ul li {
 .widget.image span.image-description {
     display: block;
     margin:0 0 10px;
-    text-align: center;
     font-family: @font-swatch5-font-family;
     font-weight: @font-swatch5-font-weight;
     font-size: @font-swatch5-font-size;
@@ -1463,7 +1460,8 @@ footer .widget.profile .twitter span {
 
 .widget.profile .bk-profile-socialicons span a {
     text-decoration: none;
-    text-indent: -9999px;
+    text-indent: 9999px;
+    white-space: nowrap;
     height: 32px;
     width: 32px;
     background-color: @color-swatch5;
@@ -1499,7 +1497,8 @@ footer .widget.socialicons {
 
 .widget.socialicons a {
     text-decoration: none;
-    text-indent: -9999px;
+    text-indent: 9999px;
+    white-space: nowrap;
     height: 32px;
     width: 32px;
     background-color: @color-swatch5;
@@ -1806,9 +1805,9 @@ footer .widget.socialicons {
   }
 
   .widget.logo {
-  display: block;
-  float: left;
-  margin-right: 8px;
+    display: block;
+    float: left;
+    margin-right: 8px;
   }
 
   .widget.companyheader .logo img {
@@ -1826,11 +1825,13 @@ footer .widget.socialicons {
   /* NAV */
 
   .widget.extendednavigation {
+    max-width: 100%;
     width: 97%;
     padding: 0;
     margin: 0 1.5%;
     border-top: 1px solid #cccccc;
   }
+
   .widget .extendednavigation {
     display: table;
     *display: block;
