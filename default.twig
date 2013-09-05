@@ -1,11 +1,12 @@
 {% extends "layout.twig" %}
 
 {% block content %}
+
 <div class="bk-pt-default">
 
-<header>
-    <div class="wrapper clearfix header-content">
-       <div class="companyheader clearfix">
+ <header>
+     <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
@@ -15,24 +16,19 @@
 
 <div class="main wrapper clearfix">
     {{zone('main')|raw}}
-</div>
+</div>  
 
 <footer>
-    <div class="wrapper clearfix footer-content">
+    <div class="wrapper clearfix">
         <div class="responsivecolumns columns-two-50-50">
-            <div class="column columns-two-left">
-
-                {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-                
-            </div>
-            <div class="column columns-two-right">
-                <ul>
-                    <li>{{widget('profile', 'footercolumn2profilephone', { 'profileType':'phone', 'phone':'profile'})|raw}}</li>
-                    <li class="footer-separator">|</li>
-                    <li>{{widget('profile', 'footercolumn2profileemail', { 'profileType':'email', 'email':'profile'})|raw}}</li>
-                </ul>
-                
-            </div>
+           <div class="column columns-two-left">
+                {{widget('content', 'footercolumn1content1', {"content":"<h3>Lorem Ipsum Dolor</h3>"})|raw}}
+                {{widget('profile', 'footercolumn2profileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
+           </div>
+           <div class="column columns-two-right">
+                {{widget('content', 'footercolumn2content1', {"content":"<h3>Pulvinar Vitae</h3>"})|raw}}
+                {{widget('profile', 'footercolumn2socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+           </div>
         </div>
     </div>
 </footer>

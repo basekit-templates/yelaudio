@@ -1,76 +1,76 @@
 {
-	"name":"yelaudio",
+	"name":"YelAudio",
 	"thumbnail":"yelaudio.png",
 	"screenshot":"yelaudio.png",
-    "colorSwatches":
+	"colorSwatches":
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#4a7491",
-            "color3":"#c26b57",
-            "color4":"#111111",
-            "color5":"#787878",
-            "color6":"#ffffff",
-            "color7":"#235071"
+            "color2":"#70d2dd",
+            "color3":"#e45f56",
+            "color4":"#838383",
+            "color5":"#6c6c6c",
+            "color6":"#6c6c6c",
+            "color7":"#ffffff"
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#0B89D4",
-            "color3":"#C76214",
-            "color4":"#111111",
-            "color5":"#787878",
-            "color6":"#ffffff",
-            "color7":"#0B89D4"
+            "color2":"#36c140",
+            "color3":"#f67db2",
+            "color4":"#838383",
+            "color5":"#6c6c6c",
+            "color6":"#6c6c6c",
+            "color7":"#ffffff"
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#54BAAA",
-            "color3":"#54BAAA",
-            "color4":"#111111",
-            "color5":"#787878",
-            "color6":"#ffffff",
-            "color7":"#54BAAA"
+            "color2":"#e87413",
+            "color3":"#138ee8",
+            "color4":"#838383",
+            "color5":"#6c6c6c",
+            "color6":"#6c6c6c",
+            "color7":"#ffffff"
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#E6771D",
-            "color3":"#E6771D",
-            "color4":"#111111",
-            "color5":"#787878",
-            "color6":"#ffffff",
-            "color7":"#E6771D"
+            "color2":"#ff7990",
+            "color3":"#4bb53e",
+            "color4":"#838383",
+            "color5":"#6c6c6c",
+            "color6":"#6c6c6c",
+            "color7":"#ffffff"
         },
         "Swatch 5": {
             "color1":"#ffffff",
-            "color2":"#3CA6C3",
-            "color3":"#3CA6C3",
-            "color4":"#111111",
-            "color5":"#787878",
-            "color6":"#ffffff",
-            "color7":"#3CA6C3"
+            "color2":"#5999d3",
+            "color3":"#e06d53",
+            "color4":"#838383",
+            "color5":"#6c6c6c",
+            "color6":"#6c6c6c",
+            "color7":"#ffffff"
         }
     },
     "fontSwatch": {
        "title": "Lato",
         "font1": {
             "font-family": "Lato",
-            "font-size": "32px",
-            "font-weight": "500",
+            "font-size": "30px",
+            "font-weight": "400",
             "line-height": "38px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
             "font-family": "Lato",
-            "font-size": "28px",
+            "font-size": "24px",
             "font-weight": "inherit",
-            "line-height": "36px",
+            "line-height": "35px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
             "font-family": "Lato",
-            "font-size": "24px",
+            "font-size": "20px",
             "font-weight": "inherit",
             "line-height": "32px",
             "color": "@color-swatch4",
@@ -78,8 +78,8 @@
         },
         "font4": {
             "font-family": "Lato",
-            "font-size": "20px",
-            "font-weight": "inherit",
+            "font-size": "18px",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -88,26 +88,26 @@
             "font-family": "Lato",
             "font-size": "16px",
             "font-weight": "400",
-            "line-height": "32px",
-            "color": "@color-swatch5",
+            "line-height": "28px",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font6": {
             "font-family": "Lato",
-            "font-size": "15px",
+            "font-size": "14px",
             "font-weight": "400",
-            "line-height": "20px",
-            "color": "@color-swatch4",
-            "color-hover": "@color-swatch3",
+            "line-height": "28px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch2",
             "letter-spacing": "inherit",
-            "background-color": "@color-swatch1",
-            "background-color-hover": "@color-swatch1"
+            "background-color": "@color-swatch2",
+            "background-color-hover": "@color-swatch2"
         },
         "font7": {
             "font-family": "Lato",
             "font-size": "16px",
-            "font-weight": "inherit",
-            "line-height": "26px",
+            "font-weight": "200",
+            "line-height": "32px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
@@ -116,25 +116,25 @@
         "font8": {
             "font-family": "Lato",
             "font-size": "36px",
-            "font-weight": "400",
-            "line-height": "50px",
-            "color": "@color-swatch4",
+            "font-weight": "200",
+            "line-height": "46px",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font9": {
             "font-family": "Lato",
             "font-size": "24px",
-            "font-weight": "400",
-            "line-height": "36px",
-            "color": "@color-swatch4",
+            "font-weight": "200",
+            "line-height": "34px",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
          "font10": {
             "font-family": "Lato",
-            "font-size": "30px",
-            "font-weight": "500",
-            "line-height": "24px",
-            "color": "@color-swatch4",
+            "font-size": "28px",
+            "font-weight": "200",
+            "line-height": "36px",
+            "color": "darken(@color-swatch4,20%)",
             "letter-spacing": "inherit"
         }
     }
