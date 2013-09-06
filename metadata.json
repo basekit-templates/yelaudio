@@ -15,8 +15,8 @@
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#36c140",
-            "color3":"#f67db2",
+            "color2":"#f97d7d",
+            "color3":"#84bb92",
             "color4":"#838383",
             "color5":"#6c6c6c",
             "color6":"#6c6c6c",
@@ -24,8 +24,8 @@
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#e87413",
-            "color3":"#138ee8",
+            "color2":"#ea805c",
+            "color3":"#6cd8cb",
             "color4":"#838383",
             "color5":"#6c6c6c",
             "color6":"#6c6c6c",
@@ -33,8 +33,8 @@
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#ff7990",
-            "color3":"#4bb53e",
+            "color2":"#71d1a6",
+            "color3":"#5d3a84",
             "color4":"#838383",
             "color5":"#6c6c6c",
             "color6":"#6c6c6c",
@@ -42,8 +42,8 @@
         },
         "Swatch 5": {
             "color1":"#ffffff",
-            "color2":"#5999d3",
-            "color3":"#e06d53",
+            "color2":"#80b9dd",
+            "color3":"#e68a79",
             "color4":"#838383",
             "color5":"#6c6c6c",
             "color6":"#6c6c6c",
