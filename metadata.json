@@ -2,6 +2,11 @@
 	"name":"YelAudio",
 	"thumbnail":"yelaudio.png",
 	"screenshot":"yelaudio.png",
+    "tags": {
+    "en": ["professional", "clean", "business", "modern", "colorful", "colourful"],
+    "es": ["profesional", "limpio", "corporativo", "moderno", "colorido", "colorido"],
+    "br": ["profissional", "limpo", "corporativo", "moderno", "colorido", "colorido"]
+    },
 	"colorSwatches":
     {
         "Swatch 1": {
