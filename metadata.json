@@ -3,9 +3,9 @@
 	"thumbnail":"yelaudio.png",
 	"screenshot":"yelaudio.png",
     "tags": {
-    "en": ["professional", "clean", "business", "modern", "colorful", "colourful"],
-    "es": ["profesional", "limpio", "corporativo", "moderno", "colorido"],
-    "br": ["profissional", "limpo", "corporativo", "moderno", "colorido"]
+    "en": ["professional", "clean", "business", "modern", "colorful", "colourful", "stylish", "fresh", "studio", "music", "media", "young", "flexible"],
+    "es": ["profesional", "limpio", "corporativo", "moderno", "colorido", "estilo", "fresco", "estudio", "música", "comunicacion", "joven", "flexible"],
+    "br": ["profissional", "limpo", "corporativo", "moderno", "colorido", "estilo", "revigorado", "estúdio", "música", "mídia", "jovem", "flexível"]
     },
 	"colorSwatches":
     {
