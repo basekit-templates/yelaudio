@@ -1,3 +1,5 @@
+@import templatecommon('/paypal.less');
+
 body {
   background-color: @color-swatch1;
   margin: 0;
@@ -648,6 +650,23 @@ footer p {
     vertical-align: middle;
 }
 
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+
+.widget.paypalbuynow .widget.button.paypal {
+    border: 1px solid darken(@color-swatch3,5%);
+   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+      -webkit-box-shadow: 0px 3px 0px darken(@color-swatch3,15%);
+    -moz-box-shadow:    0px 3px 0px darken(@color-swatch3,15%); 
+    box-shadow:         0px 3px 0px darken(@color-swatch3,15%);
+      letter-spacing: 1px;
+  text-shadow: none; 
+  }
+
 
 /* ===============================
    BUTTON CSS
@@ -661,7 +680,6 @@ footer p {
 {
   padding: 10px 15px;
   margin: 1em auto;
-  border: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
