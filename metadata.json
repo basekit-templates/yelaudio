@@ -119,6 +119,7 @@
             "background-color-hover": "darken(@color-swatch3,5%)"
         },
         "font8": {
+
             "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
             "font-size": "36px",
             "font-weight": "200",
