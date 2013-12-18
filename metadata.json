@@ -58,7 +58,7 @@
     "fontSwatch": {
        "title": "Lato",
         "font1": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "30px",
             "font-weight": "400",
             "line-height": "38px",
@@ -66,7 +66,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "35px",
@@ -74,7 +74,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "20px",
             "font-weight": "inherit",
             "line-height": "32px",
@@ -82,7 +82,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "28px",
@@ -90,7 +90,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "28px",
@@ -98,7 +98,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "28px",
@@ -109,7 +109,7 @@
             "background-color-hover": "@color-swatch2"
         },
         "font7": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "16px",
             "font-weight": "200",
             "line-height": "32px",
@@ -120,7 +120,7 @@
         },
         "font8": {
 
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "36px",
             "font-weight": "200",
             "line-height": "46px",
@@ -128,7 +128,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "24px",
             "font-weight": "200",
             "line-height": "34px",
@@ -136,7 +136,7 @@
             "letter-spacing": "inherit"
         },
          "font10": {
-            "font-family": "\"Lato\", Geneva, Segoe UI, sans-serif",
+            "font-family": "\"Lato\", Geneva, sans-serif",
             "font-size": "28px",
             "font-weight": "200",
             "line-height": "36px",
