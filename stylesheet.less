@@ -11,115 +11,36 @@ body {
     margin: 0 5%;
 }
 
-a {
-  font-family:@font-swatch2-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  color:@color-swatch3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, p {
-  margin: 0;
-  padding: 0 0 10px;
-}
-
-h1 {
-  font-family:@font-swatch1-font-family;
-  font-weight: @font-swatch1-font-weight;
-  color:@font-swatch1-color;
-  line-height:@font-swatch1-line-height;
-  letter-spacing: @font-swatch1-letter-spacing;
-  font-size: @font-swatch1-font-size;
-}
-
-h2
-{
-  font-family:@font-swatch2-font-family;
-  font-size: @font-swatch2-font-size;
-  font-weight: @font-swatch2-font-weight;
-  line-height:@font-swatch2-line-height;
-  color: @font-swatch2-color;
-  letter-spacing: @font-swatch2-letter-spacing;
-}
-
-h3
-{
-  font-family:@font-swatch3-font-family;
-  font-size:@font-swatch3-font-size;
-  font-weight: @font-swatch3-font-weight;
-  color: @font-swatch3-color;
-  line-height:@font-swatch3-line-height;
-  letter-spacing: @font-swatch3-letter-spacing;
-}
-
-h4
-{
-  font-family:@font-swatch4-font-family;
-  font-size:@font-swatch4-font-size;
-  font-weight:@font-swatch4-font-weight;
-  line-height:@font-swatch4-line-height;
-  color:@font-swatch4-color;
-  letter-spacing: @font-swatch4-letter-spacing;
-}
-
-p
-{
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
-
 blockquote {
-  background-color: lighten(@font-swatch5-color,40%);
-  margin:0;
-  padding: 14px 16px;
-  quotes:"\201C""\201D""\2018""\2019";
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  margin: 5px 0;
-}
-  blockquote:before {
-  font-family: georgia;
-  color:darken(@color-swatch2,15%);
-  content:open-quote;
-  font-size:4em;
-  line-height:.1em;
-  margin-right:.1em;
-  vertical-align:-.4em;
-}
-  blockquote p {
-  display: inline;
-  font-style: italic;
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:lighten(@font-swatch5-color,15%);
+    margin: 7px 0;
+    padding: 0 30px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
 }
 
-ul, ol, li {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
+blockquote:before {
+    font-family: georgia;
+    color: @font-swatch5-color;
+    content: open-quote;
+    left: 0;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: 10px;
+    vertical-align: -.4em;
 }
 
-.bk-content-text ul, .bk-content-text ol, .bk-content-text li {
-  padding-left: 1.4em; 
-  text-indent: -1.4em;
+blockquote:after {
+    font-family: georgia;
+    color: @font-swatch5-color;
+    content: close-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-left: 10px;
+    vertical-align: -.4em;
 }
 
 /* ===============================
@@ -385,22 +306,10 @@ footer p {
 }
 
 .widget.extendednavigation ul li.folder {
-  display: block;
-  background-image: image('/images/arrow-down.png');
-  background-position: right center;
   background-repeat: no-repeat;
   height: 100%;
   padding: 0 7px 0 0;
   cursor: pointer;
-  -webkit-border-top-left-radius: 13px;
-  -webkit-border-top-right-radius: 13px;
-  -moz-border-radius-topleft: 13px;
-  -moz-border-radius-topright: 13px;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
-  -moz-border-radius-bottomright: 13px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 13px;
 }
 
 .widget.extendednavigation ul li.folder li:hover a:hover {
@@ -483,7 +392,7 @@ footer p {
 .widget.feature .content {
   height: 600px;
   text-align: center;
-  vertical-align: top;
+  vertical-align: none;
 }
 
 .widget.feature .content .spare {
@@ -494,6 +403,11 @@ footer p {
 .widget.feature h3 {
   display: none;
 }
+
+.widget.feature .feature-bgimg .content {
+  vertical-align: top;
+}
+
 
 /* FEATURE background */
 
@@ -641,11 +555,11 @@ footer p {
 }
 
 .widget.feature.btn-top-right h2{
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .widget.feature.btn-top-right button{
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 /* ===============================
@@ -1249,6 +1163,70 @@ textarea {
 
 .widget.contactform fieldset button.btn.bold {
     font-weight: bold;
+}
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        button {
+            padding: 10px;
+            color: @font-swatch7-color;
+            font-size: @font-swatch6-font-size;
+            font-weight: @font-swatch6-font-weight;
+            line-height: @font-swatch6-line-height;
+            background-color: @font-swatch7-background-color;
+            border: none;
+        }
+    }
 }
 
 
@@ -1968,6 +1946,7 @@ footer .widget.socialicons {
    .widget.feature .feature-bgimg {
 
     height: 300px; /* should be in media query*/
+    vertical-align: none;
    }
 
   .widget.feature .content {
