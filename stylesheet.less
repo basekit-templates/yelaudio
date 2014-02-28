@@ -77,12 +77,18 @@ header {
 }
 
 
-.companyheader {
+.infoheader {
   display: block;
-  float: left;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 15px 0px;
+  z-index:2;
+}
+
+@media @tablet {
+    .infoheader {
+        float:left;
+    }
 }
 
 .companyname a:hover {
@@ -113,36 +119,6 @@ header {
   display: block;
   float: left;
   margin-right: 8px;
-}
-
-
-.widget.companyheader:before,
-.widget.companyheader:after {
-  content: " ";
-  display: table;
-}
-
-.widget.companyheader:after {
-  clear: both;
-}
-
-.widget.companyheader {
-  *zoom: 1;
-}
-
-.widget.companyheader .logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.widget.companyheader .logo-bottom {
-  display: none;
-}
-
-.widget.companyheader .companyname {
-  display: block;
-  float: left;
-  margin-top: 14px;
 }
 
 /* ===============================
@@ -221,6 +197,7 @@ footer p {
    =============================== */
 
 .widget.extendednavigation {
+  z-index:1;
   float: right;
   position: relative;
   padding-top: 16px;
