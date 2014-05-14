@@ -8,6 +8,14 @@
     "es": ["profesional", "limpio", "corporativo", "moderno", "colorido", "estilo", "fresco", "estudio", "música", "comunicacion", "joven", "flexible"],
     "br": ["profissional", "limpo", "corporativo", "moderno", "colorido", "estilo", "revigorado", "estúdio", "música", "mídia", "jovem", "flexível"]
     },
+    "images":[
+        "images/gallery/1.jpg",
+        "images/gallery/2.jpg",
+        "images/gallery/3.jpg",
+        "images/gallery/4.jpg",
+        "images/gallery/5.jpg",
+        "images/gallery/6.jpg"
+    ],
 	"colorSwatches":
     {
         "Swatch 1": {
