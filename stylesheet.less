@@ -150,14 +150,13 @@ footer p {
 
 .widget.extendednavigation {
   z-index:1;
-  float: right;
   position: relative;
   padding-top: 16px;
   width: auto;
 }
 
 .widget.extendednavigation a.pull {
- top:-46px;
+ top: 37px;
 }
 
 .widget.extendednavigation ul li a:hover {
@@ -185,13 +184,16 @@ footer p {
 }
 
 .widget.extendednavigation ul li {
-  float: left;
-  display: block;
+  display: inline-block;
   padding: 0;
 }
 
 .widget.extendednavigation ul li.selected a {
   color: @font-swatch6-color-hover;
+}
+
+.widget .extendednavigation ul li.folder:after {
+  top: 48%;
 }
 
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
@@ -204,8 +206,26 @@ footer p {
   color: @font-swatch6-color;
 }
 
+.widget.extendednavigation ul li:first-child.folder .text, .widget.extendednavigation ul li:last-child.folder .text {
+    padding: 14px 20px;
+    @media @tablet {
+      padding: 5px;
+    }
+  }
+
+
 .widget.extendednavigation ul li:first-child a {
   padding: 14px 20px 14px 0;
+  @media @tablet {
+    padding: 5px 0;
+  }
+}
+
+.widget.extendednavigation ul li:last-child a {
+  padding: 14px 0 14px 20px;
+  @media @tablet {
+    padding: 5px 0;
+  }
 }
 
 .widget.extendednavigation ul li a .text:hover {
@@ -291,26 +311,6 @@ footer p {
   padding: 0;
 }
 
-/* EXTENDED NAVIGATION - INSIDE ZONE */ 
-
-.main .widget.extendednavigation {
-    max-width: 100%;
-    width: 100%;
-    float: none;
-    padding: 20px 0px;
-}
-
-.main .widget.extendednavigation:before,
-.main .widget.extendednavigation:after {
-  content: " ";
-  display: table;
-}
-.main .widget.extendednavigation:after {
-  clear: both;
-}
-.main .widget.extendednavigation {
-  *zoom: 1;
-}
 
 
 /* ===============================
@@ -1789,7 +1789,7 @@ footer .widget.socialicons {
   }
 
   .widget.extendednavigation ul li.folder {
-    padding: 16px 0;
+    padding: 16px 16px 16px 0;
   }
 
   .widget .extendednavigation li {
@@ -1798,7 +1798,7 @@ footer .widget.socialicons {
   }
 
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-      padding: 5px 0;
+      padding: 5px;
       margin: 0;
   }
 
@@ -1836,10 +1836,6 @@ footer .widget.socialicons {
 
     .widget.extendednavigation ul li:hover > ul li:last-child {
     padding-top: 16px;
-  }
-
-  .widget.extendednavigation li:hover > ul > li > a {
-    padding-left: 10px;
   }
 
 
