@@ -82,7 +82,7 @@ header {
   padding: 15px 0px;
   z-index:2;
   float: left;
-  width: 25%;
+  width: auto;
 }
 
 @media @tablet {
@@ -153,7 +153,7 @@ footer p {
   float: right;
   position: relative;
   padding-top: 16px;
-  width: 75%;
+  width: auto;
 }
 
 .widget.extendednavigation a.pull {
@@ -202,6 +202,10 @@ footer p {
   font-weight: @font-swatch6-font-weight;
   letter-spacing: @font-swatch6-letter-spacing;
   color: @font-swatch6-color;
+}
+
+.widget.extendednavigation ul li:first-child a {
+  padding: 14px 20px 14px 0;
 }
 
 .widget.extendednavigation ul li a .text:hover {
