@@ -1,5 +1,12 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+@import "@{templateLocal}/css/common-forms.less";
+@import "@{templateLocal}/css/widgets-blog.less";
+@import "@{templateLocal}/css/widgets-menu.less";
+@import "@{templateLocal}/css/widgets-ecom.less";
+
+@desktop: ~"only screen and (min-width : 769px)";
+
 body {
   background-color: @color-swatch1;
   margin: 0;
@@ -1096,177 +1103,7 @@ textarea {
     font-weight: bold;
 }
 
-/* ===============================
-  BLOG
-   =============================== */
 
-.widget {
-    &.blogpostlist {
-        .blog-post-item {
-            border-bottom: 1px dotted @color-swatch5;
-        }
-
-    }
-}
-
-.blog-post-item {
-    margin: 1.5em 0;
-    padding-bottom: 1em;
-    h2 {
-        a {
-            font-family: @font-swatch2-font-family;
-            font-size: @font-swatch2-font-size;
-            font-weight: @font-swatch2-font-weight;
-            line-height: @font-swatch2-line-height;
-            color: @font-swatch2-color;
-            letter-spacing: @font-swatch2-letter-spacing;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-.blog-post-metadata {
-    background-color: transparent;
-    background-image: none;
-    margin-top: 0;
-    text-align: left;
-}
-
-.blog-list-footer {
-    background-color: transparent;
-    background-image: none;
-}
-
-.blog-post-more-link {
-    float: left;
-    width: 100%;
-}
-
-/* BLOG SEARCH */
-.blogsearch {
-    form {
-        button {
-            padding: 10px;
-            color: @font-swatch7-color;
-            font-size: @font-swatch6-font-size;
-            font-weight: @font-swatch6-font-weight;
-            line-height: @font-swatch6-line-height;
-            background-color: @font-swatch7-background-color;
-            border: none;
-        }
-    }
-}
-
-
-/* ===============================
-   SIGNUPFORM WIDGET
-   =============================== */
-
-.widget.signupform fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-.widget.signupform fieldset label {
-    width: 100%;
-    float: left;
-    font-family:@font-swatch4-font-family;
-    font-size:@font-swatch4-font-size;
-    font-weight:@font-swatch4-font-weight;
-    line-height:@font-swatch4-line-height;
-    color:@font-swatch4-color;
-    letter-spacing: @font-swatch4-letter-spacing;
-}
-
-.widget.signupform fieldset input {
-    height: 40px;
-    width: 73%;
-    border: 1px solid lighten(@color-swatch5,30%);
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    color: @font-swatch5-color;
-    text-indent: 8px;
-    margin-top: 6px;
-    margin-bottom: 30px;
-    padding: 0;
-    float:left;
-    background-color: @color-swatch1;
-}
-
-.widget.signupform fieldset button.btn {
-    width: 24%;
-    height: 40px;
-    float:right;
-    padding: 1px;
-    margin-top: 6px;
-    border: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 3px 0px darken(@color-swatch3,15%);
-    -moz-box-shadow:    0px 3px 0px darken(@color-swatch3,15%); 
-    box-shadow:         0px 3px 0px darken(@color-swatch3,15%); 
-    font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-font-size;
-    font-weight:@font-swatch7-font-weight;
-    background-color: @font-swatch7-background-color;
-    color: @font-swatch7-color;
-    text-decoration: none;
-    letter-spacing: 1px;
-    text-shadow: none;
-
-}
-
-.widget.signupform fieldset button.btn:hover {
-    background-color: @font-swatch7-background-color-hover;
-    cursor: pointer;
-}
-
-
-/* ===============================
-   TWEET THIS WIDGET
-   =============================== */
-
-.widget.tweet {
-   padding: 14px 0; 
-}
-
-.widget.tweet a {
-  padding: 8px 13px 8px 38px;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-position: 13px 7px;
-  margin: 2.2em auto;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-        -webkit-box-shadow: 0px 3px 0px darken(@color-swatch3,15%);
-    -moz-box-shadow:    0px 3px 0px darken(@color-swatch3,15%); 
-    box-shadow:         0px 3px 0px darken(@color-swatch3,15%); 
-  font-family: @font-swatch7-font-family;
-  font-size:1em;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  color: @font-swatch7-color;
-  text-decoration: none;
-  text-shadow: 0 1px 0px rgba(0,0,0,0.3);
-}
-
-.widget.tweet a:hover, .tweet a:active {
-  padding: 8px 13px 8px 38px;
-  cursor: pointer;
-  background-color: @font-swatch7-background-color-hover;
-  cursor: pointer;
-}
 
 
 /* ===============================
