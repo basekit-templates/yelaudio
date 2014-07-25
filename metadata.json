@@ -3,6 +3,7 @@
 	"thumbnail":"yelaudio.png",
 	"screenshot":"yelaudio.png",
 	"templateType":"standard",
+    "pageTypes": ["home"],  
     "tags": {
     "en": ["professional", "clean", "business", "modern", "colorful", "colourful", "stylish", "fresh", "studio", "music", "media", "young", "flexible"],
     "es": ["profesional", "limpio", "corporativo", "moderno", "colorido", "estilo", "fresco", "estudio", "música", "comunicacion", "joven", "flexible"],
@@ -137,7 +138,7 @@
         },
         "font9": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "24px",
+            "font-size": "20px",
             "font-weight": "200",
             "line-height": "36px",
             "color": "@color-swatch1",
