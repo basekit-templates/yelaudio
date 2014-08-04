@@ -4,7 +4,6 @@
 
 // ======= Widget: BlogSearch
 .widget.blogsearch {
-	
     form {
 		.form-group {
 			// Flex
@@ -55,7 +54,12 @@
 		    -ms-flex-item-align: auto;
 		    align-self: auto;
 		    // Appearance
-		    margin-right: 1em;	   
+		    margin-right: 1em;
+		    margin-bottom: 0;	   
+
+		    @media @mobile {
+		    	width: 100%;
+		    }
         }
         input {  
         	// Flex
@@ -91,7 +95,7 @@
 		    align-self: auto;
 
 		    position: relative;
-		    top: -1px;
+		    top: 0px;
         }
     }
 }
@@ -115,7 +119,8 @@
 			}
 
 			.blog-post-feature-image-wrap {
-				height: 370px;
+				height: 0;
+				padding-bottom: 40%;
 				background-size: cover;
 				background-position: center;
 				z-index: 1000;
@@ -220,7 +225,6 @@
 			    @media @mobile {
 			    	font-size: bkscale(@font-swatch1-font-size, 0.5);
 				    line-height: bkscale(@font-swatch1-line-height, 0.5);
-				    padding: 0.8em;
 				    margin-bottom: 20px;
 			    }
 			}
@@ -240,8 +244,9 @@
 		.blog-post-metadata {
 			// Date
 			time.blog-post-publish-date {
-				
-				border-bottom: 1px solid lighten(@color-swatch2,15%);
+				color: @color-swatch5;
+				font-size: @font-swatch5-font-size;
+				border-bottom: 1px solid  fade(@color-swatch5,20%);
 				display: block;
 				float: right;
 				width: 30%;
@@ -256,7 +261,7 @@
 			}
 			// Category
 			div.blog-post-category {
-				border-bottom: 1px solid lighten(@color-swatch2,15%);
+				border-bottom: 1px solid  fade(@color-swatch5,20%);
 				float: right;
 				width: 30%;
 				padding: 1em 0;
@@ -300,12 +305,11 @@
 						a {
 							display: inline-block;
 							padding: 0em 0.7em;
-							border-radius: 5px;
-							box-shadow: 0px 3px 0px darken(@color-swatch3,15%); 
 							background-color: @font-swatch7-background-color;
 							color: @font-swatch7-color;
 							letter-spacing: 1px;
-							border: 1px solid darken(@color-swatch3,5%);
+							border-radius: 3px;
+							box-shadow: 0px 2px 0px darken(@color-swatch3,10%);
 
 							&:hover {
 								text-decoration: none;
@@ -334,8 +338,9 @@
 				padding: 0;
 				background-size: 110%;
 				background-color: transparent;
-				// border: 2px solid mix(@color-swatch3, #fff, 12%);
+				border: 2px solid mix(@color-swatch3, #fff, 12%);
 				margin-right: 0.4em;
+				box-shadow: none;
 
 				@media @mobile {
 					width: 40px;
