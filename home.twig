@@ -4,9 +4,11 @@
 
 <header class="bk-header clearfix">
     <div class="wrapper">
-        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+        <div class="flex-container">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+        </div>
     </div>
 </header>
 
