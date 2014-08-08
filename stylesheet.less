@@ -94,7 +94,7 @@ blockquote:after {
 @pull-button-height: 18px;
 
 header.bk-header {
-  .wrapper {
+  .flex-container {
     // Flex parent
     display: -webkit-box;
     display: -moz-box;
@@ -127,6 +127,7 @@ header.bk-header {
   
     // Layout
     max-width: (@header-wrapper-width + @logo-right-padding);
+    margin: 0 -(@logo-right-padding / 2);
     padding: (@header-vertical-spacing / 2) 0;
 
     .widget.logo {
