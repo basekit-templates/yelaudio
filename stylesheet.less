@@ -154,6 +154,16 @@ footer.pageFooter {
 
 .widget.extendednavigation a.pull {
  top:0px;
+ &:after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 3px;
+      background: @color-swatch3;
+      top: 0;
+      right: 0;
+      box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
+    }
 }
 
 .widget.extendednavigation ul li a:hover {
