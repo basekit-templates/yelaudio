@@ -46,6 +46,28 @@
 	max-width: (@bk-header-wrapper-width + @bk-logo-right-spacing);
 	margin: 0 -(@bk-logo-right-spacing / 2);
 	padding: (@bk-header-vertical-spacing / 2) 0;
+
+	&.logo-inline.company-inline.nav-alone {
+		.widget.extendednavigation ul {
+			text-align: left !important;
+		}
+	}
+
+	&.company-alone {
+		.widget.companyname {
+			text-align: center;
+		}
+		.widget.extendednavigation ul {
+			text-align: center !important;
+		}
+	}
+
+	&.logo-wide.company-inline {
+		.widget.logo {
+			width: 100%;
+			text-align: center;
+		}
+	}
 }
 
 
