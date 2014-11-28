@@ -11,6 +11,7 @@
 // Latest flexbox model
 
 .wrapContainer {
+	position: relative;
 	// Flex parent
 	display: -webkit-box;
 	display: -moz-box;
@@ -85,6 +86,12 @@
 			}
 			.widget.companyname {
 				text-align: center;
+			}
+			.widget.extendednavigation {
+				min-height: 40px;
+				ul.align-right li {
+					text-align: center;
+				}
 			}
 			.widget.extendednavigation a.pull {
 				top: 0;
@@ -163,6 +170,8 @@
 
 
 .wrapContainer .widget.extendednavigation {
+	position: relative;
+
 	// Flex child
 	-webkit-box-ordinal-group: 1;
 	-moz-box-ordinal-group: 1;
@@ -179,14 +188,17 @@
 	align-self: auto;
 
 	@media @tablet {
+
 		margin: 0 (@bk-logo-right-spacing / 2);
 		width: 100%;
-		min-height: @bk-pull-button-height;
+		// min-height: @bk-pull-button-height;
 	}
 	a.pull {
 		@media @tablet {
-			top: -30px;
-			
+			top: -53px;
+			&:after {
+				top: 12px;
+			}
 		}
 	}
 }
