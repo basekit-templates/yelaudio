@@ -3,7 +3,7 @@
 	"thumbnail":"yelaudio.png",
 	"screenshot":"yelaudio.png",
 	"templateType":"standard",
-    "pageTypes": ["home"],  
+    "pageTypes": ["home"],
     "tags": {
     "en": ["professional", "clean", "business", "modern", "colorful", "colourful", "stylish", "fresh", "studio", "music", "media", "young", "flexible"],
     "es": ["profesional", "limpio", "corporativo", "moderno", "colorido", "estilo", "fresco", "estudio", "música", "comunicacion", "joven", "flexible"],
@@ -24,7 +24,7 @@
             "color2":"#70d2dd",
             "color3":"#e45f56",
             "color4":"#838383",
-            "color5":"#6c6c6c",
+            "color5":"#787878",
             "color6":"#6c6c6c",
             "color7":"#ffffff"
         },
@@ -33,7 +33,7 @@
             "color2":"#f97d7d",
             "color3":"#84bb92",
             "color4":"#838383",
-            "color5":"#6c6c6c",
+            "color5":"#787878",
             "color6":"#6c6c6c",
             "color7":"#ffffff"
         },
@@ -42,7 +42,7 @@
             "color2":"#ea805c",
             "color3":"#6cd8cb",
             "color4":"#838383",
-            "color5":"#6c6c6c",
+            "color5":"#787878",
             "color6":"#6c6c6c",
             "color7":"#ffffff"
         },
@@ -51,7 +51,7 @@
             "color2":"#71d1a6",
             "color3":"#5d3a84",
             "color4":"#838383",
-            "color5":"#6c6c6c",
+            "color5":"#787878",
             "color6":"#6c6c6c",
             "color7":"#ffffff"
         },
@@ -60,7 +60,7 @@
             "color2":"#80b9dd",
             "color3":"#e68a79",
             "color4":"#838383",
-            "color5":"#6c6c6c",
+            "color5":"#787878",
             "color6":"#6c6c6c",
             "color7":"#ffffff"
         }
@@ -104,7 +104,7 @@
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "28px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
