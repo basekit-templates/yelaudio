@@ -1,0 +1,26 @@
+// On devices without touch enabled, hover events will work as normal
+.no-touch {
+    .widget.extendednavigation ul li {
+        &:hover > ul {
+            display: block!important;
+            width: 100%;
+        }
+
+        &.folder-open ul {
+            display: none;
+        }
+    }
+}
+
+
+// On devices with touch enabled, hover is disabled and a JS toggle is used
+.widget.extendednavigation ul li {
+    &:hover > ul {
+        display: none;
+    }
+
+    &.folder-open ul {
+        display: block;
+        width: 100%;
+    }
+}
