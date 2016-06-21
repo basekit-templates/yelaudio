@@ -286,7 +286,8 @@ footer.pageFooter {
   display: none;
 }
 
-.widget.extendednavigation li:hover > ul {
+.widget.extendednavigation li:hover > ul,
+.widget.extendednavigation li.folder-open > ul {
   display: block;
   width: 186px;
   background-color: @color-swatch1;
@@ -305,18 +306,21 @@ footer.pageFooter {
 
 
 
-.widget.extendednavigation ul li:hover > ul li:last-child {
+.widget.extendednavigation ul li:hover > ul li:last-child,
+.widget.extendednavigation ul li.folder-open > ul li:last-child {
   border-radius: 0 0 13px 13px;
   -webkit-border-radius: 0 0 13px 13px;
   -moz-border-radius: 0 0 13px 13px;
   border-radius: 0 0 13px 13px;
 }
 
-.widget.extendednavigation ul li:hover > ul li:hover a:hover {
+.widget.extendednavigation ul li:hover > ul li:hover a:hover,
+.widget.extendednavigation ul li.folder-open > ul li:hover a:hover {
   color: @font-swatch6-color;
 }
 
-.widget.extendednavigation li:hover > ul li a {
+.widget.extendednavigation li:hover > ul li a,
+.widget.extendednavigation li.folder-open > ul li a {
   padding: 0;
 }
 
