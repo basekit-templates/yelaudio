@@ -1556,11 +1556,13 @@ footer .widget.socialicons {
   border-bottom: 1px solid lighten(@color-swatch2,15%);
   }
 
-  .widget.extendednavigation ul li:hover .text {
+  .widget.extendednavigation ul li:hover .text,
+  .extendednavigation ul li.folder-open .text {
     color: @font-swatch6-color-hover;
   }
 
-  .widget.extendednavigation ul li:hover {
+  .widget.extendednavigation ul li:hover,
+  .widget.extendednavigation ul li.folder-open {
     border-bottom: 1px solid lighten(@color-swatch2,15%);
   }
 
@@ -1579,21 +1581,25 @@ footer .widget.socialicons {
       display: none;
   }
 
-  .widget.extendednavigation ul li:hover > ul {
+  .widget.extendednavigation ul li:hover > ul,
+  .widget.extendednavigation ul li.folder-open > ul {
       width: 100%;
       padding: 0;
       margin-top: 0;
   }
 
-  .widget.extendednavigation ul li:hover > ul > li {
+  .widget.extendednavigation ul li:hover > ul > li,
+  .widget.extendednavigation ul li.folder-open > ul > li {
     border-bottom: none;
   }
 
-  .widget.extendednavigation ul li:hover > ul > li .text {
+  .widget.extendednavigation ul li:hover > ul > li .text,
+  .widget.extendednavigation ul li.folder-open > ul >li .text {
     color: @font-swatch6-color;
   }
 
-  .widget.extendednavigation ul li:hover > ul > li:hover .text {
+  .widget.extendednavigation ul li:hover > ul > li:hover .text,
+  .widget.extendednavigation ul li.folder-open > ul li:hover .text {
     color: @font-swatch6-color-hover;
   }
 
@@ -1601,7 +1607,8 @@ footer .widget.socialicons {
     border-radius: 0;
   }
 
-  .widget.extendednavigation ul li:hover > ul li:first-child {
+  .widget.extendednavigation ul li:hover > ul li:first-child,
+  .widget.extendednavigation ul li.folder-open > ul li:first-child {
     border-top: none;
   }
 
