@@ -37,19 +37,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <script>
-$(document).ready(function(){
-     $('.folder-toggle').click( function(){
-        if ( $(this).hasClass('folder-open') ) {
-            $(this).removeClass('folder-open');
-        } else {
-            $('.folder-toggle.folder-open').removeClass('folder-open');
-            $(this).addClass('folder-open');    
-        }
-    });
-});
-</script>
-
-<script>
     $(document).on('mq4hsChange', function (e) {
         $(document.documentElement).toggleClass('no-touch', e.trueHover);
     });
