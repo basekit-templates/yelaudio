@@ -1,7 +1,7 @@
 {
 	"name":"YelAudio",
 	"thumbnail":"yelaudio.png",
-	"screenshot":"yelaudio.png",
+	"screenshot":"yelaudio-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
