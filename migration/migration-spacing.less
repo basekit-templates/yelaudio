@@ -1,28 +1,76 @@
 
 // -----------------------------
-//  Migration - Spacing
+//  Migration
 // -----------------------------
 
 
 
+
+
 // Variables
+// -----------------------------
+
+
 @width--contained-max: 960px;
 @site-container: 960px;
 @site-margin: auto;
 @site-padding: 5%;
 
 
-body.edit #page-zones__main:empty,
+
+
+
+// Spacing
+// -----------------------------
+
+
+// Set site wrapper
+#page-zones__main:empty,
 .empty-zone,
 #page-zones__main > .widget:not(.row),
 .row:not(.row--width-no-padding) .row__container,
 .wrapper {
-    margin: 0 @site-padding;
+    margin-left: @site-padding;
+    margin-right: @site-padding;
     width: 90%;
 
     @media only screen and (min-width: 1140px) {
         margin-left: @site-margin;
         margin-right: @site-margin;
         width: @site-container;
+    }
+}
+
+
+// Set spacing for the zone when no widgets are present
+.empty-zone,
+#page-zones__main:empty, {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media @tablet {
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+}
+
+
+// Move spacing to first widget in the main zone (not rows)
+#page-zones__main > .widget:not(.row):first-child,
+#page-zones__main > .row + .widget:not(.row) {
+    margin-top: 40px;
+
+    @media @tablet {
+        margin-top: 20px;
+    }
+}
+
+
+// Move spacing to last widget in the main zone (not rows)
+#page-zones__main > .widget:not(.row):last-of-type {
+    margin-bottom: 40px;
+
+    @media @tablet {
+        margin-bottom: 20px;
     }
 }
