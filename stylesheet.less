@@ -19,11 +19,6 @@ body {
   padding: 0;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
 blockquote {
     margin: 7px 0;
     padding: 0 30px;
@@ -1726,13 +1721,6 @@ footer .widget.socialicons {
 
 }
 
-@media only screen and (min-width: 1140px) {
-  .wrapper {
-    width: 960px; /* 1140px - 10% for margins */
-    margin: 0 auto;
-  }
-}
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1744,3 +1732,13 @@ footer .widget.socialicons {
 .clearfix {
   *zoom: 1;
 }
+
+
+
+
+
+// -----------------------------
+//  Migration
+// -----------------------------
+
+@import "@{templateLocal}/migration/migration-spacing.less";
