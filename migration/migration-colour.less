@@ -1,0 +1,245 @@
+
+
+//  Headings
+// -----------------------------
+
+
+// .blog-post-title,
+// .blog-post-title a,
+// .buynow-form__maintenance-title,
+// .basket-summary-title,
+// .product-category h3,
+// .ecom-featuredproducts-header h2,
+// .ecom-featuredproducts-title,
+// .ecom-product-title,
+// .ecom-productslist-title,
+// .menu-name,
+// .menu-item-name,
+// .menu-item-nutritional-title,
+// .menu-subsection-name,
+// .bk-pagetitle__title,
+// .yelp-title,
+// .legend,
+// .label,
+// blockquote,
+// h1, h2, h3, h4, h5 {
+
+//     .row--style-light & {
+//         color: contrast(@color--light, @color--dark, @color--accent);
+//     }
+
+//     .row--style-accent & {
+//         color: contrast(@color--accent, @color--dark, @color--light);
+//     }
+
+//     .row--style-dark & {
+//         color: contrast(@color--dark, @color--accent, @color--light);
+//     }
+// }
+
+// Heading Text
+.color__heading-text--light();
+
+
+// Heading Body
+.color__body-text--light();
+
+
+
+
+//  Body text
+// -----------------------------
+
+
+// p,
+// ul,
+// ol,
+// li,
+// td,
+// h6,
+// label,
+// .label,
+// .productlist-item-count,
+// .ecom-productlist-price,
+// .ecom-product-price,
+// .twitter time,
+// .twitter time + span,
+// .twitter .twitter-content span a {
+
+//     .row--style-light & {
+//         color: fade(contrast(@color--light, @color--dark, @color--accent), 80%);
+//     }
+
+//     .row--style-accent & {
+//         color: fade(contrast(@color--accent, @color--dark, @color--light), 80%);
+//     }
+
+//     .row--style-dark & {
+//         color: fade(contrast(@color--dark, @color--accent, @color--light), 80%);
+//     }
+// }
+
+
+
+
+//  Links
+// -----------------------------
+
+
+a,
+.content a,
+.contentgroup a,
+.twitter .twitter-content p a,
+.twitter .twitter-content .bk-full-name,
+.widget.clicktocall a,
+.widget.clicktocall a:hover {
+
+    .row--style-accent & {
+        color: contrast(@color--accent, @color--dark, @color--light);
+    }
+
+    .row--style-dark & {
+        color: contrast(@color--dark, @color--accent, @color--light);
+    }
+}
+
+
+
+
+//  Buttons
+// -----------------------------
+
+
+button,
+.btn,
+.contentgroup__link,
+.tweet a,
+.checkout-order-button,
+.ecombasket-checkout-link,
+.ecomcategorieslist li a,
+.widget.ecomproduct .ecom-product .btn,
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-cattag .ecom-product-tag .ecom-product-tag-link,
+.blog-post-more-link a,
+.paginate-older,
+.contactform .btn,
+.dropbox button,
+.filedownload button,
+.widget.paypalbuynow .widget.button.paypal {
+
+    .row--style-accent & {
+        background-color: @color--dark;
+        border: 1px solid darken(@color--dark, 5%);
+        box-shadow: 0px 3px 0px darken(@color--dark, 15%);
+        color: contrast(@color--dark, @color--accent, @color--light);
+
+        &:hover {
+            background-color: darken(@color--dark, 8%);
+        }
+    }
+
+    .row--style-dark & {
+        background-color: @color--accent;
+        border: 1px solid darken(@color--accent, 5%);
+        box-shadow: 0px 3px 0px darken(@color--accent, 15%);
+        color: contrast(@color--accent, @color--dark, @color--light);
+
+        &:hover {
+            background-color: darken(@color--accent, 8%);
+        }
+    }
+}
+
+
+// Social icons
+.widget.socialicons span a {
+
+    .row--style-accent & {
+        background-color: @color--dark;
+        color: contrast(@color--dark, @color--accent, @color--light);
+
+        &:hover {
+            background-color: darken(@color--dark, 8%);
+        }
+    }
+
+    .row--style-dark & {
+        background-color: @color--accent;
+        color: contrast(@color--accent, @color--dark, @color--light);
+
+        &:hover {
+            background-color: darken(@color--accent, 8%);
+        }
+    }
+}
+
+
+
+
+//  Dividers
+// -----------------------------
+
+
+hr.line,
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+
+    .row--style-accent & {
+        background-color: fade(contrast(@color--accent, @color--dark, @color--light), 25%);
+    }
+    
+    .row--style-dark & {
+        background-color: fade(contrast(@color--dark, @color--accent, @color--light), 25%);
+    }
+}
+
+
+// Any borders used within the template
+.blogpostlist .blog-post-item,
+.bk-pt-default header,
+.ecomproductslist .ecom-productslist-title,
+.widget.ecombasketsummary table.basket-summary-items-table tbody tr:last-child td,
+.ecomproduct .ecom-product-cattag,
+.widget.ecomproductslist .productlist-filter select,
+.widget.ecomcheckout .delivery select,
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select {
+
+    .row--style-accent & {
+        border-color: fade(contrast(@color--accent, @color--dark, @color--light), 60%);
+    }
+
+    .row--style-dark & {
+        border-color: fade(contrast(@color--dark, @color--accent, @color--light), 60%);
+    }
+}
+
+
+
+
+//  Slideshow
+// -----------------------------
+
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot {
+
+    .row--style-accent & {
+        background: @color--accent;
+        border-color: contrast(@color--accent, @color--dark, @color--light);
+    }
+
+    .row--style-dark & {
+        background: @color--dark;
+        border-color: contrast(@color--dark, @color--accent, @color--light);
+    }
+}
+
+
+.widget.responsiveslideshow .slideshow-widget .btn-next:after,
+.widget.responsiveslideshow .slideshow-widget .btn-prev:after {
+
+    .row--style-accent & {
+        background: @color--accent;
+    }
+
+    .row--style-dark & {
+        background: @color--dark;
+    }
+}

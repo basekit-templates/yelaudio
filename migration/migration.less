@@ -6,7 +6,6 @@
 
 
 
-
 // Variables
 // -----------------------------
 
@@ -19,16 +18,15 @@
 
 
 
-
-// Spacing
+// Site Container
 // -----------------------------
 
 
-// Set site wrapper
+// Set site container
 #page-zones__main:empty,
 .empty-zone,
 #page-zones__main > .widget:not(.row),
-.row:not(.row--width-no-padding) .row__container,
+.row:not(.widget):not(.row--width-no-padding) .row__container,
 .wrapper {
     margin-left: @site-padding;
     margin-right: @site-padding;
@@ -42,24 +40,18 @@
 }
 
 
-// Set spacing for the zone when no widgets are present
-.empty-zone,
-#page-zones__main:empty, {
-    margin-top: 40px;
-    margin-bottom: 40px;
 
-    @media @tablet {
-        margin-top: 20px;
-        margin-bottom: 20px
-    }
-}
+
+// Zone Spacing
+// -----------------------------
 
 
 // Move spacing to first widget in the main zone (not rows)
+.edit #page-zones__main-overlay + .widget:not(.row),
 #page-zones__main > .widget:not(.row):first-child,
 #page-zones__main > .row + .widget:not(.row) {
     margin-top: 40px;
-
+    
     @media @tablet {
         margin-top: 20px;
     }
@@ -67,10 +59,26 @@
 
 
 // Move spacing to last widget in the main zone (not rows)
-#page-zones__main > .widget:not(.row):last-of-type {
+#page-zones__main > .widget:not(.row):last-child {
     margin-bottom: 40px;
-
+    
     @media @tablet {
         margin-bottom: 20px;
     }
+}
+
+
+// Readds spacing to the widget drop zone in V8/10S
+body.edit #page-zones__main:empty {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+// Add spacing to the zone when empty
+.edit #page-zones__main-overlay.empty-zone {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 40px;
+    position: relative;
 }

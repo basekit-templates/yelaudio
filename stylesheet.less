@@ -925,6 +925,22 @@ hr.line.align-right {
    =============================== */
 @twitterProfilePicSize: 98px;
 
+
+.twitter {
+
+  time, a, time + span {
+    color: fade(@color-swatch5,50%);
+  }
+
+  .bk-content .bk-full-name {
+    color: @color-swatch3;
+  }
+
+  .bk-content a {
+    color: @color-swatch3;
+  }
+}
+
 .widget.twitter {
 
   ul.twitter {
@@ -937,7 +953,6 @@ hr.line.align-right {
         font-family: @font-swatch5-font-family;
         line-height: 1;
         font-weight: normal;
-        color: fade(@color-swatch5,50%);
         text-decoration: none;
         @media @mobile {
           font-size: bkscale(@font-swatch5-font-size, 0.6);
@@ -969,7 +984,6 @@ hr.line.align-right {
           margin-left: (@twitterProfilePicSize * 0.55 + 12);
         }
         .bk-full-name {
-          color: @color-swatch3;
           font-size: bkscale(@font-swatch5-font-size, 1);
           @media @mobile {
             font-size: bkscale(@font-swatch5-font-size, 0.8);
@@ -980,7 +994,6 @@ hr.line.align-right {
           a {
             font-family: @font-swatch5-font-family;
             font-size: @font-swatch5-font-size;
-            color: @color-swatch3;
             line-height: @font-swatch5-line-height;
           }
         }
@@ -1732,4 +1745,4 @@ footer .widget.socialicons {
 //  Migration
 // -----------------------------
 
-@import "@{templateLocal}/migration/migration-spacing.less";
+@import "@{templateLocal}/migration/migration.less";
