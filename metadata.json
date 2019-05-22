@@ -2,6 +2,7 @@
 	"name":"YelAudio",
 	"thumbnail":"yelaudio.png",
 	"screenshot":"yelaudio-screenshot.jpg",
+    "versionTenCompatible": 1,
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
