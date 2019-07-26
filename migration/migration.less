@@ -4,6 +4,26 @@
 // -----------------------------
 
 
+#migrated-site {
+
+
+// Stylseheet overrides
+// -----------------------------
+
+
+.main.wrapper {
+    width: 100%;
+    margin: 0;
+}
+.main {
+    padding: 0;
+}
+
+.widget.content {
+    overflow: inherit;
+}
+
+
 
 
 // Variables
@@ -26,8 +46,7 @@
 #page-zones__main:empty,
 .empty-zone,
 #page-zones__main > .widget:not(.row),
-.row:not(.widget):not(.row--width-no-padding) .row__container,
-.wrapper {
+.row:not(.widget):not(.row--width-no-padding) .row__container {
     margin-left: @site-padding;
     margin-right: @site-padding;
     width: 90%;
@@ -81,4 +100,7 @@ body.edit #page-zones__main:empty {
     margin-bottom: 40px;
     min-height: 40px;
     position: relative;
+}
+
+
 }
